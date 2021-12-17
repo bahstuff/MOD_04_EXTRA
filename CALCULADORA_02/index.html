@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>CALCULADORA SECUENCIAL</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <header>
+            <h2></h2>
+        </header>
+        <div class="content">
+            <div class="inputs">
+                <div class="numbers">
+                    <label for="input-number"></label>
+                    <input type="number" id="input-number" value = "" placeholder="TYPE NUMBER">
+                </div>
+                <div class="buttons" id="buttons">
+                    <button name="button" id="button-sum" onclick="calculate('+')" >+</button>
+                    <button name="button" id="button-substract" onclick="calculate('-')">-</button>
+                    <button name="button" id="button-multiply" onclick="calculate('*')" >x</button>
+                    <button name="button" id="button-divide"  onclick="calculate('/')">÷</button>
+                    <button name="button" id="button-equal" onclick="totalResult()">=</button>
+                    <button name="button" id="button-happy"  onclick = myFunction()>:)</button>
+                </div>
+                <div class="print-result">
+                    <label for="print-result"></label>
+                    <input type="text" id="print-result" value="RESULT" readonly>
+                </div>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
